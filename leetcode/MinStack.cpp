@@ -36,8 +36,7 @@ public:
         }
         StackNode *temp = TOP;
         TOP = TOP->next;
-        free(temp);
-        temp = NULL;
+        delete temp;
     }
 
     int top() {
